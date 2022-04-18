@@ -1,5 +1,5 @@
 # Importação das bibliotecas
-from hcsr04 import HCSR04 
+from Sensores.hcsr04 import HCSR04 
 from time import sleep
  
 # ESP32
