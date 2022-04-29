@@ -9,7 +9,7 @@ def loopreading():
             x = "No Rain"
         else:
             x = "Rain"
-            return 'm'   #A string de retorno para o caso da identificação de chuva. Se não for detectado, retornará ao loop de leitura.
+            return 'r'   #A string de retorno para o caso da identificação de chuva. Se não for detectado, retornará ao loop de leitura.
     sleep(1)
      
 loopreading()
