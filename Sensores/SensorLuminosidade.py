@@ -2,7 +2,7 @@ from machine import Pin, ADC
 from time import sleep
 
 ldr= ADC(Pin(23)) 
-relay = Pin(1, Pin.IN)
+relay = Pin(1, Pin.OUT)
 
 ldr.atten(ADC.ATTN_11DB)  #conversão de 0 a 4095
 
