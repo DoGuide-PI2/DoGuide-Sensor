@@ -14,9 +14,12 @@ while True:
     distance3 = sensor_buracos.distance_cm()
     distance4 = sensor_altura.distance_cm()
  
-    if (distance1 <= 200) | (distance2 <= 200): #Se detectado objeto 2 metros (200cm) a frente ou menos que isso
+    if (distance1 <= 200)): #Se detectado objeto 2 metros (200cm) a frente (a esquerda) ou menor que isso
         #print("Objeto a frente")
-        return 'f'
+        return 'e'
+    elif (distance2 <= 200): #Se detectado objeto 2 metros (200cm) a frente (a direita) ou menor que isso 
+        #print("Buraco")
+        return 'd'
     elif (distance3 > 17.407): #A distancia do HCSR04 até o chão é esse valor, se a distancia for maior que isso até a deteccao de um objeto, isso eh um buraco. 
         #print("Buraco")
         return 'b'
